@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D - Social Icon</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #ccc;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 5px;
+        }
+
+        ul li a .fa {
+            transition: 0.5s;
+        }
+
+        ul li a span {
+            position: absolute;
+            top: 30px;
+            color: #262626;
+            letter-spacing: 4px;
+            transition: .5s;
+        }
+
+        ul li a {
+            text-decoration: none;
+            display: absolute;
+            display: block;
+            width: 210px;
+            height: 80px;
+            background: #fff;
+            text-align: left;
+            padding-left: 20px;
+            transform: rotate(-30deg) skew(25deg) translate(0, 0);
+            transition: 0.5s;
+            box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        ul li a:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            height: 100%;
+            width: 20px;
+            background: #b1b1b1;
+            transform: 0.5s;
+            transform: rotate(0deg) skewY(-45deg);
+        }
+
+        ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: -23px;
+            left: 23px;
+            height: 27px;
+            width: 71%;
+            background: #b1b1b1;
+            transform: 0.5s;
+            transform: rotate(-135deg) skewY(-45deg);
+        }
+
+        ul li a:hover {
+            transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        ul li:hover span {
+            color: #fff;
+        }
+
+        ul li:hover:nth-child(1) a {
+            background: #3b5998;
+        }
+
+        ul li:hover:nth-child(1) a:before {
+            background: #365492;
+        }
+
+        ul li:hover:nth-child(1) a:after {
+            background: #4a69ab;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <i aria-hidden="true"></i>
+                <span> - HarshNavdiya</span>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
